@@ -33,7 +33,7 @@
    display: inline;
    padding: 5px 10px;
    margin: 0 10px;
-   color: #000;
+  
 }
 
 .navbar button{
@@ -52,3 +52,59 @@
     text-align: center;
     font-size: 26px;
 }
+
+.navbar a{
+    color: #000;
+}
+
+ .navbar a.active{
+    color: teal;
+    font-weight: 800;
+}
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin: 20px 15px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: blue;
+}
+
+.information{
+   padding: 0 13%;
+}
+
+.information p{
+    margin: 15px 0;
+    font-size: 18px;
+ }
+
+ .form{
+    padding: 0 13%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .form input,textarea{
+    width: 30%;
+    margin: 5px 0;
+ }
+
+ .form input{
+    padding: 10px 0;
+    
+ }
+
+ .form button{
+    width: 20%;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px 0;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+
+ }
