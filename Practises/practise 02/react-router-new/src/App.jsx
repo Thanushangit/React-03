@@ -11,6 +11,11 @@ import Form from './components/Form';
 import NotFound from './pages/NotFound';
 import UserLayout from './layout/UserLayout';
 import Users from './pages/Users';
+import UseLoader from './utils/UseLoader';
+import { User } from './components/User';
+import { UseSingleLoader } from './utils/UseSingleLoader';
+import ErrorPage from './components/ErrorPage';
+
 
 function App() {
   const router = createBrowserRouter(
@@ -23,12 +28,16 @@ function App() {
             <Route path='info' element={<Info/>}/>
             <Route path='form' element={<Form/>}/>
         </Route>
-        <Route path='users' element={<UserLayout/>}>
-            <Route index  element={<Users/>}/>
+        <Route path='users' element={<UserLayout/>} errorElement={<ErrorPage/>}>
+            <Route index  element={<Users/>} loader={UseLoader}/>
+            <Route path=":id" element={<User/>} loader={UseSingleLoader}/>
+            
         </Route>
+       
         <Route path="login" element={<Login/>} />
         <Route path='*' element={<NotFound/>}/>
       </Route>
+     
     )
   );
 

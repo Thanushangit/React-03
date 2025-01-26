@@ -4,9 +4,9 @@ import { Outlet } from 'react-router-dom'
 const UserLayout = () => {
   return (
     <div className='container'>
-        <h3>
+        <h2>
             List of users...
-        </h3>
+        </h2>
         <Outlet/>
     </div>
   )
