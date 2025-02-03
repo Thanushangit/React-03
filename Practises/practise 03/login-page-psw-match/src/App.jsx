@@ -8,16 +8,17 @@ function App() {
   const [psw2,setpsw2]=useState();
   const[re,setRe]=useState(false)
 
-  async function Handler(e){
-      await setpsw2(e.target.value);
-      await if(psw1==psw2){
-        setRe(false)
-      }
+  async function Handler(e) {
+  
+     setpsw2(e.target.value);  
 
-      else{
-        setRe(true)
-      }
-  }
+    if (psw1 === e.target.value) {  
+        setRe(false);
+    } else {
+        setRe(true);
+    }
+}
+
 
   return (
     <>
