@@ -8,6 +8,7 @@ const Feed = () => {
         <div><Stories/></div>
         <div><Posts/></div>
         
+        
     </div>
   )
 }
