@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 0.5px solid rgb(202, 196, 196);
+  
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+ul li{
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.navlink{
+    text-decoration: none;
+}
+
+.navlink.active{
+   color: teal;
+}
+
+.item{
+    border-bottom: 1px solid black;
+}
