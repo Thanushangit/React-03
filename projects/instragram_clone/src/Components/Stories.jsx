@@ -33,7 +33,7 @@ const Stories = () => {
           </div>
         ))
         :(
-          <p>loading</p>
+          <p>loading page</p>
         )
       }
 
