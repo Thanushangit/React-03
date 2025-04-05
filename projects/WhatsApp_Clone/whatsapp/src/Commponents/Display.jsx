@@ -1,12 +1,30 @@
 import React from 'react';
 
-const Display = () => {
+const Display = (props) => {
+
+
+  const getFormattedTime = () => {
+    const date = new Date();
+    let hours = date.getHours();
+    const minutes = date.getMinutes();
+    const ampm = hours >= 12 ? 'pm' : 'am';
+  
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+  
+    return `${hours}.${formattedMinutes} ${ampm}`;
+  };
+
+
+
+
   return (
     <div className="display">
       <div className="whatsapp-nav">
         <div className="topnav">
           <div>
-            <p>05.36</p>
+            <p>{getFormattedTime()}</p>
           </div>
           <div className="default-properities">
             <div className="d-flex align-items-center">
@@ -15,7 +33,7 @@ const Display = () => {
             </div>
             <div className="d-flex align-items-center">
               <p><i className="bi bi-battery-half mx-1"></i></p>
-              <p>80%</p>
+              <p>{props.battery}%</p>
             </div>
           </div>
         </div>
@@ -27,8 +45,8 @@ const Display = () => {
               <img src="/dp.jpg" alt="" />
             </div>
             <div className="user-name">
-              <h5 className="mx-2 my-0">Thanushan</h5>
-              <span className="check mx-2">Online</span>
+              <h5 className="mx-2 my-0">{props.name}</h5>
+              <span className="check mx-2">{props.status}</span>
             </div>
           </div>
           <div className="right d-flex align-items-center gap-4">
@@ -42,14 +60,14 @@ const Display = () => {
       <div className="content">
         <div className="chat-window">
           <div className="chat-message received">
-            <p>Hello! How are you?</p>
+            <p>{props.recivemessage}</p>
             <div className="Time">
               <p>10.08 am</p>
             </div>
           </div>
 
           <div className="chat-message sent">
-            <p>I'm good, thanks!</p>
+            <p>{props.sendermessage}</p>
             <div className="Time tick-container">
               <p>10.11 am</p>
               <div className="tick">
