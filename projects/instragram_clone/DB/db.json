@@ -1,199 +1,199 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "user": {
-          "id": 101,
-          "username": "john_doe",
-          "profile_pic": "src/assets/john_doe.jpg"
-        },
-        "image": "src/assets/sunset.jpg",
-        "caption": "Beautiful sunset #Nature",
-        "likes": 120,
-        "comments": [
-          {
-            "user": "alice_wonder",
-            "comment": "Wow! Amazing shot!"
-          },
-          {
-            "user": "mark_92",
-            "comment": "Where is this place?"
-          }
-        ],
-        "timestamp": "2025-02-11T14:30:00Z"
-      },
-      {
-        "id": 2,
-        "user": {
-          "id": 102,
-          "username": "emma_rose",
-          "profile_pic": "src/assets/emma_rose.png"
-        },
-        "image": "src/assets/mountain.jpg",
-        "caption": "Hiking up the mountains! #Adventure",
-        "likes": 200,
-        "comments": [
-          {
-            "user": "jake_traveler",
-            "comment": "This looks amazing!"
-          },
-          {
-            "user": "lucy_smith",
-            "comment": "Where did you go?"
-          }
-        ],
-        "timestamp": "2025-02-12T10:15:00Z"
-      },
-      {
-        "id": 3,
-        "user": {
-          "id": 103,
-          "username": "michael_smith",
-          "profile_pic": "src/assets/michael_smith.jpg"
-        },
-        "image": "src/assets/coffee.jpg",
-        "caption": "Morning vibes ☕ #CoffeeLover",
-        "likes": 95,
-        "comments": [
-          {
-            "user": "sarah_lee",
-            "comment": "That looks delicious!"
-          },
-          {
-            "user": "james_bond",
-            "comment": "Best way to start the day!"
-          }
-        ],
-        "timestamp": "2025-02-13T08:00:00Z"
-      },
-      {
-        "id": 4,
-        "user": {
-          "id": 104,
-          "username": "lisa_art",
-          "profile_pic": "src/assets/isa_art.jpeg"
-        },
-        "image": "src/assets/painting.jpg",
-        "caption": "Finished my latest painting! 🎨 #Art",
-        "likes": 180,
-        "comments": [
-          {
-            "user": "john_doe",
-            "comment": "Such a masterpiece!"
-          },
-          {
-            "user": "emma_rose",
-            "comment": "I love the colors!"
-          }
-        ],
-        "timestamp": "2025-02-14T16:45:00Z"
-      },
-      {
-        "id": 5,
-        "user": {
-          "id": 105,
-          "username": "david_tech",
-          "profile_pic": "src/assets/david_tech.jpg"
-        },
-        "image": "src/assets/code_screen.jpg",
-        "caption": "Late-night coding session! 💻 #DeveloperLife",
-        "likes": 250,
-        "comments": [
-          {
-            "user": "michael_smith",
-            "comment": "Code is life!"
-          },
-          {
-            "user": "lisa_art",
-            "comment": "Respect to all coders!"
-          }
-        ],
-        "timestamp": "2025-02-15T23:30:00Z"
-      }
-    ],
-    "profile" : {
-                  "id": 101,
-                  "username": "john_doe",
-                  "profile_pic": "src/assets/john_doe.jpg"
-    },
-
-    "suggestion": [
-      {
+  "posts": [
+    {
+      "id": "1",
+      "user": {
         "id": 101,
         "username": "john_doe",
         "profile_pic": "src/assets/john_doe.jpg"
       },
-      {
+      "image": "src/assets/sunset.jpg",
+      "caption": "Beautiful sunset #Nature",
+      "likes": 120,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Wow! Amazing shot!"
+        },
+        {
+          "user": "mark_92",
+          "comment": "Where is this place?"
+        }
+      ],
+      "timestamp": "2025-02-11T14:30:00Z"
+    },
+    {
+      "id": "2",
+      "user": {
         "id": 102,
         "username": "emma_rose",
         "profile_pic": "src/assets/emma_rose.png"
       },
-      {
+      "image": "src/assets/mountain.jpg",
+      "caption": "Hiking up the mountains! #Adventure",
+      "likes": 200,
+      "comments": [
+        {
+          "user": "jake_traveler",
+          "comment": "This looks amazing!"
+        },
+        {
+          "user": "lucy_smith",
+          "comment": "Where did you go?"
+        }
+      ],
+      "timestamp": "2025-02-12T10:15:00Z"
+    },
+    {
+      "id": "3",
+      "user": {
         "id": 103,
         "username": "michael_smith",
         "profile_pic": "src/assets/michael_smith.jpg"
       },
-      {
+      "image": "src/assets/coffee.jpg",
+      "caption": "Morning vibes ☕ #CoffeeLover",
+      "likes": 95,
+      "comments": [
+        {
+          "user": "sarah_lee",
+          "comment": "That looks delicious!"
+        },
+        {
+          "user": "james_bond",
+          "comment": "Best way to start the day!"
+        }
+      ],
+      "timestamp": "2025-02-13T08:00:00Z"
+    },
+    {
+      "id": "4",
+      "user": {
         "id": 104,
         "username": "lisa_art",
         "profile_pic": "src/assets/isa_art.jpeg"
       },
-      {
+      "image": "src/assets/painting.jpg",
+      "caption": "Finished my latest painting! 🎨 #Art",
+      "likes": 180,
+      "comments": [
+        {
+          "user": "john_doe",
+          "comment": "Such a masterpiece!"
+        },
+        {
+          "user": "emma_rose",
+          "comment": "I love the colors!"
+        }
+      ],
+      "timestamp": "2025-02-14T16:45:00Z"
+    },
+    {
+      "id": "5",
+      "user": {
         "id": 105,
         "username": "david_tech",
         "profile_pic": "src/assets/david_tech.jpg"
-      }
-
-
-    ],
-    "story": [
-      {
-        "id": 1,
-        "user": {
-          "id": 101,
-          "username": "john_doe",
-          "profile_pic": "src/assets/john_doe.jpg"
-        },
-        "image": "/assets/s1.jpg"
       },
-      {
-        "id": 2,
-        "user": {
-          "id": 102,
-          "username": "emma_rose",
-          "profile_pic": "src/assets/emma_rose.png"
+      "image": "src/assets/code_screen.jpg",
+      "caption": "Late-night coding session! 💻 #DeveloperLife",
+      "likes": 250,
+      "comments": [
+        {
+          "user": "michael_smith",
+          "comment": "Code is life!"
         },
-        "image": "/assets/2.jpeg"
+        {
+          "user": "lisa_art",
+          "comment": "Respect to all coders!"
+        }
+      ],
+      "timestamp": "2025-02-15T23:30:00Z"
+    }
+  ],
+  "profile": {
+    "id": 101,
+    "username": "john",
+    "profile_pic": "src/assets/john_doe.jpg"
+  },
+  "suggestion": [
+    {
+      "id": "101",
+      "username": "john_doe",
+      "profile_pic": "src/assets/john_doe.jpg"
+    },
+    {
+      "id": "102",
+      "username": "emma_rose",
+      "profile_pic": "src/assets/emma_rose.png"
+    },
+    {
+      "id": "103",
+      "username": "michael_smith",
+      "profile_pic": "src/assets/michael_smith.jpg"
+    },
+    {
+      "id": "104",
+      "username": "lisa_art",
+      "profile_pic": "src/assets/isa_art.jpeg"
+    },
+    {
+      "id": "105",
+      "username": "david_tech",
+      "profile_pic": "src/assets/david_tech.jpg"
+    }
+  ],
+  "story": [
+    {
+      "id": "1",
+      "user": {
+        "id": 101,
+        "username": "john_doe",
+        "profile_pic": "src/assets/john_doe.jpg"
       },
-      {
-        "id": 3,
-        "user": {
-          "id": 103,
-          "username": "michael_smith",
-          "profile_pic": "src/assets/michael_smith.jpg"
-        },
-        "image": "/assets/3.jpeg"
-        
+      "image": "/assets/s1.jpg"
+    },
+    {
+      "id": "2",
+      "user": {
+        "id": 102,
+        "username": "emma_rose",
+        "profile_pic": "src/assets/emma_rose.png"
       },
-      {
-        "id": 4,
-        "user": {
-          "id": 104,
-          "username": "lisa_art",
-          "profile_pic": "src/assets/isa_art.jpeg"
-        },
-        "image": "/assets/4.jpeg"
-       
+      "image": "/assets/2.jpeg"
+    },
+    {
+      "id": "3",
+      "user": {
+        "id": 103,
+        "username": "michael_smith",
+        "profile_pic": "src/assets/michael_smith.jpg"
       },
-      {
-        "id": 5,
-        "user": {
-          "id": 105,
-          "username": "david_tech",
-          "profile_pic": "src/assets/david_tech.jpg"
-        },
-        "image": "/assets/5.jpeg"
-      }
-    ]
+      "image": "/assets/3.jpeg"
+    },
+    {
+      "id": "4",
+      "user": {
+        "id": 104,
+        "username": "lisa_art",
+        "profile_pic": "src/assets/isa_art.jpeg"
+      },
+      "image": "/assets/4.jpeg"
+    },
+    {
+      "id": "5",
+      "user": {
+        "id": 105,
+        "username": "david_tech",
+        "profile_pic": "src/assets/david_tech.jpg"
+      },
+      "image": "/assets/5.jpeg"
+    }
+  ],
+  "followers": [
+    {
+      "id": "104",
+      "username": "lisa_art"
+    }
+  ]
 }
-  
