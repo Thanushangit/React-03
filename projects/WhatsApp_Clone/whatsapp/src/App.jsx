@@ -13,7 +13,7 @@ const App = () => {
         <h2>Fake WhatsApp</h2>
       </nav>
       <div className="item">
-        {/* <Details/> */}
+        <Details/>
          <Display/>
       </div>
     </div>

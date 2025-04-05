@@ -2,14 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-}
-
-body {
+  }
+  
+  body {
     background-color: #3ba79b;
-}
-
-nav {
+  }
+  
+  nav {
     width: 100%;
     height: 50px;
     background-color: #f8f9fa;
@@ -17,84 +16,80 @@ nav {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-
-}
-
-nav h2 {
+  }
+  
+  nav h2 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #25D366;
     font-weight: bold;
     font-size: 24px;
-}
-
-
-.logo {
+  }
+  
+  .logo {
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-}
-
-
-.image-logo {
+  }
+  
+  .image-logo {
     height: 80%;
     width: 80%;
-}
-
-.item {
+  }
+  
+  .item {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-.display {
+  }
+  
+  .display {
     margin-top: 10px;
     height: 80vh;
     width: 350px;
     background-color: #E5DDD5;
     position: relative;
-}
-
-.details {
+  }
+  
+  .details {
     height: 80vh;
     background-color: white;
-}
-
-.whatsapp-nav {
+  }
+  
+  .whatsapp-nav {
     height: 100px;
     background-color: #075E54;
-}
-
-.topnav {
+  }
+  
+  .topnav {
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.topnav p {
+  }
+  
+  .topnav p {
     color: #EDEDED;
     font-weight: 100;
     font-size: 12px;
-}
-
-.default-properities {
+  }
+  
+  .default-properities {
     display: flex;
     gap: 10px;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #EDEDED;
-}
-
-.user-dp {
+  }
+  
+  .user-dp {
     height: 40px;
     width: 40px;
     display: flex;
@@ -102,87 +97,162 @@ nav h2 {
     justify-content: center;
     margin-left: 8px;
     margin-top: 1px;
-}
-
-
-.user-dp img {
+  }
+  
+  .user-dp img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
     margin-bottom: 8px;
-
-}
-
-.chat-window {
+  }
+  
+  .chat-window {
     background-color: #E5DDD5;
     height: 58vh;
     overflow-y: scroll;
-    scrollbar-width: thin;         
-    scrollbar-color: #888 #E5DDD5;  
+    scrollbar-width: thin;
+    scrollbar-color: #888 #E5DDD5;
   }
   
   .chat-window::-webkit-scrollbar {
-    width: 4px; 
+    width: 4px;
   }
   
   .chat-window::-webkit-scrollbar-track {
-    background: #E5DDD5; 
+    background: #E5DDD5;
   }
   
   .chat-window::-webkit-scrollbar-thumb {
-    background-color: #888;  
+    background-color: #888;
     border-radius: 20px;
   }
   
-
-.chat-message {
+  .chat-message {
+    position: relative;
     max-width: 60%;
-    padding: 8px 12px;
+    padding: 6px 9px 15px 9px;
     margin: 10px;
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-.received {
+  }
+  
+  .chat-message .Time {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 9px;
+  }
+  
+  .tick-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tick {
+    display: inline-flex;
+    align-items: center;
+    gap: 0px;
+    margin-left: 5px;
+  }
+  
+  .tick i {
+    font-size: 12px;
+    color: #53bdeb; /* WhatsApp blue tick color */
+  }
+  
+  .user-name {
+    line-height: 5px;
+    margin-bottom: 2px;
+  }
+  
+  .check {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  
+  .chat-message p {
+    margin: 0;
+  }
+  
+  .received {
     background-color: #FFFFFF;
     align-self: flex-start;
     margin-right: auto;
-}
-
-.sent {
+  }
+  
+  .sent {
     background-color: #DCF8C6;
     align-self: flex-end;
     margin-left: auto;
-}
-
-.content{
+  }
+  
+  .content {
     position: relative;
-}
-
-.bottom-container{
+  }
+  
+  .bottom-container {
     width: 100%;
     height: 40px;
     position: absolute;
-    bottom: 0px;
-    /* background-color: blue; */
+    bottom: 5px;
     left: 0px;
-    
-
-}
-
-.input-container{
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .input-container {
+    width: 100%;
+    border: none;
     border-radius: 30px;
     margin: 0 8px;
-    padding: 5px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  .input-container input {
+    width: 85%;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .emoji {
+    font-size: 18px;
+  }
+  
+  .emoji-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-container p {
+    margin: 0;
+  }
+  
+  .mic {
+    width: 35px;
+    height: 35px;
+    background-color: #075E54;
+    margin-right: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f8f9fa;
-}
-
-.input-container p{
+    border-radius: 50%;
+  }
+  
+  .mic p {
     margin: 0;
-}
+    color: #fff;
+    font-size: 18px;
+  }
+  
