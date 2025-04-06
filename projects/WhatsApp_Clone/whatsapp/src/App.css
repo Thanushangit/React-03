@@ -135,7 +135,7 @@
   .chat-message {
     position: relative;
     max-width: 60%;
-    padding: 6px 9px 15px 9px;
+    padding: 6px 9px 10px 9px;
     margin: 10px;
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
@@ -215,7 +215,7 @@
     border: none;
     border-radius: 30px;
     margin: 0 8px;
-    padding: 7px;
+    padding: 1px 7px;
     display: flex;
     align-items: center;
     background-color: #f8f9fa;
@@ -224,10 +224,15 @@
   .input-container input {
     width: 85%;
     padding: 0px 10px;
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
     background-color: transparent;
     font-family: 'Roboto', sans-serif;
+  }
+
+  .input-container input:focus {
+    outline: none !important;
+    border: none !important;
   }
   
   .emoji {

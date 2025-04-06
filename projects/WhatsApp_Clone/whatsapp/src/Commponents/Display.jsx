@@ -8,16 +8,23 @@ const Display = (props) => {
     let hours = date.getHours();
     const minutes = date.getMinutes();
     const ampm = hours >= 12 ? 'pm' : 'am';
-  
+
     hours = hours % 12;
     hours = hours ? hours : 12; // the hour '0' should be '12'
     const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
-  
+
     return `${hours}.${formattedMinutes} ${ampm}`;
   };
 
 
-
+  const getAvatar = () => {
+    if (props.dp) {
+      return props.dp;
+    } else {
+      const encodedName = encodeURIComponent(props.name);
+      return `https://ui-avatars.com/api/?name=${encodedName}`;
+    }
+  };
 
   return (
     <div className="display">
@@ -42,7 +49,7 @@ const Display = (props) => {
           <div className="left d-flex align-items-center">
             <i className="fa-solid fa-arrow-left"></i>
             <div className="user-dp">
-              <img src="/dp.jpg" alt="" />
+              <img src={getAvatar()} alt="" />
             </div>
             <div className="user-name">
               <h5 className="mx-2 my-0">{props.name}</h5>
@@ -59,24 +66,25 @@ const Display = (props) => {
 
       <div className="content">
         <div className="chat-window">
-          <div className="chat-message received">
-            <p>{props.recivemessage}</p>
-            <div className="Time">
-              <p>10.08 am</p>
-            </div>
-          </div>
-
-          <div className="chat-message sent">
-            <p>{props.sendermessage}</p>
-            <div className="Time tick-container">
-              <p>10.11 am</p>
-              <div className="tick">
-                <i className="fa-solid fa-check"></i>
-                <i className="fa-solid fa-check"></i>
+          {props.messages.map((msg, idx) => (
+            <div
+              className={`chat-message ${msg.type === "sent" ? "sent" : "received"}`}
+              key={idx}
+            >
+              <p>{msg.text}</p>
+              <div className="Time">
+                <p>{getFormattedTime()}</p>
+                {msg.type === "sent" && (
+                  <div className="tick">
+                    <i className="fa-solid fa-check"></i>
+                    <i className="fa-solid fa-check"></i>
+                  </div>
+                )}
               </div>
             </div>
-          </div>
+          ))}
         </div>
+
       </div>
 
       <div className="bottom-container">
