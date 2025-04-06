@@ -1,0 +1,172 @@
+app.jsx
+
+return (
+    <div>
+      <nav>
+        <div className="logo">
+          <img src="" alt="" className='image-logo'/>
+        </div>
+        <h2>Fake WhatsApp</h2>
+      </nav>
+      <div className="item">
+        <Details />
+         <Display/>
+         />
+      </div>
+    </div>
+  )
+
+
+  Display.jsx
+
+  const getFormattedTime = () => {
+    const date = new Date();
+    let hours = date.getHours();
+    const minutes = date.getMinutes();
+    const ampm = hours >= 12 ? 'pm' : 'am';
+  
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+  
+    return `${hours}.${formattedMinutes} ${ampm}`;
+  };
+
+
+ 
+      avatar   `https://ui-avatars.com/api/?name=${encodedName}`;
+    
+
+
+  return (
+    <div className="display">
+      <div className="whatsapp-nav">
+        <div className="topnav">
+          <div>
+            <p>time</p>
+          </div>
+          <div className="default-properities">
+            <div className="d-flex align-items-center">
+              <p><b>LTE</b></p>
+              <p><i className="fa-solid fa-signal mx-1 mb-1"></i></p>
+            </div>
+            <div className="d-flex align-items-center">
+              <p><i className="bi bi-battery-half mx-1"></i></p>
+              <p>40%</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="navbar">
+          <div className="left d-flex align-items-center">
+            <i className="fa-solid fa-arrow-left"></i>
+            <div className="user-dp">
+              <img src="" alt="" />
+            </div>
+            <div className="user-name">
+              <h5 className="mx-2 my-0">name</h5>
+              <span className="check mx-2">status</span>
+            </div>
+          </div>
+          <div className="right d-flex align-items-center gap-4">
+            <i className="fa-solid fa-video"></i>
+            <i className="fa-solid fa-phone"></i>
+            <i className="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+      </div>
+
+      <div className="content">
+      <div className="chat-window">
+
+
+  
+    <div
+      className=chat-message (sent or received)  
+    >
+      <p>{msg.text}</p>
+      <div className="Time">
+        <p>{getFormattedTime()}</p>
+        
+
+
+          <div className="tick">
+            <i className="fa-solid fa-check"></i>
+            <i className="fa-solid fa-check"></i>
+          </div>
+        
+
+
+      </div>
+    </div>
+  
+</div>
+
+      </div>
+
+      <div className="bottom-container">
+        <div className="input-container">
+          <div className="emoji-1">
+            <p><i className="bi bi-emoji-smile emoji"></i></p>
+          </div>
+          <input type="text" />
+          <div className="emoji-2">
+            <p><i className="fa-solid fa-paperclip emoji"></i></p>
+            <p><i className="bi bi-camera emoji"></i></p>
+          </div>
+        </div>
+
+        <div className="mic">
+          <p><i className="bi bi-mic-fill"></i></p>
+        </div>
+      </div>
+    </div>
+  );
+
+
+export default Display;
+
+
+
+
+Details.jsx
+
+return (
+    <div className='details'>
+      <h2>Enter your details</h2>
+      <div className="input">
+        <label htmlFor="">Battery Percentage</label>
+        <input type="range"  min={10} max={90}
+       
+        />
+      </div>
+      <div className="input">
+        <label htmlFor="">DP</label>
+        <input type="text"/>
+      </div>
+      <div className="input">
+        <label htmlFor="">UserName</label>
+        <input type="text" value={props.name}
+       
+        />
+      </div>
+      <div className="input">
+        <label htmlFor="">Status</label>
+        <select name="status" id="">
+          <option value="Online">Online</option>
+          <option value="Offline">Offline</option>
+        </select>
+      </div>
+      <div className="input">
+        <label htmlFor="">Receiver Message <span><i className="bi bi-send mx-5" title='Send'></i></span></label>
+        <textarea name="receiver" id="" ></textarea>
+      </div>
+      <div className="input">
+        <label htmlFor="">Sender Message<span><i className="bi bi-send mx-5" title='Send'></i></span></label>
+        <textarea name="sender" id=""></textarea>
+      </div>
+    </div>
+  )
+
+
+export default Details
