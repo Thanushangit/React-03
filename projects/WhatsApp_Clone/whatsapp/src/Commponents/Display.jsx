@@ -72,7 +72,7 @@ const Display = (props) => {
               key={idx}
             >
               <p>{msg.text}</p>
-              <div className="Time">
+              <div className="Time d-flex">
                 <p>{getFormattedTime()}</p>
                 {msg.type === "sent" && (
                   <div className="tick">
