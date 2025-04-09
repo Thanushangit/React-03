@@ -1,0 +1,112 @@
+{
+    "product":[
+        {
+            "title":"Cotton buffalo check slim pants",
+            "price": 1850,
+            "size":["S","M","L"],
+            "category":"Pant",
+            "brand":"Dennis lingo",
+            "img":"/pants-01.jpg"
+        },
+
+        {
+            "title":"Classic crew neck graphic print t-shirt",
+            "price":2500 ,
+            "size":["S","M","L","XL","XXL"],
+            "category":"T-shirt",
+            "brand":"Dennis lingo",
+             "img":"/tshirt-01.jpg"
+        },
+
+        {
+            "title":"Button-up plaid flannel shirt with soft finish",
+            "price":3250 ,
+            "size":["XL","XXL"],
+            "category":"Shirt",
+            "brand":"Snitch",
+            "img":"/shirt-01.jpg"
+        },
+
+        {
+            "title":"High-rise stretch denim skinny pants",
+            "price":1500 ,
+            "size":["M","XL","XXL"],
+            "category":"Pant",
+            "brand":"Dennis lingo",
+             "img":"/pants-02.jpg"
+        },
+
+        {
+            "title":"Slim fit plain cotton t-shirt with short sleeves",
+            "price": 6500,
+            "size":["S","M","L"],
+            "category":"T-shirt",
+            "brand":"Snitch",
+            "img":"/tshirt-02.jpg"
+        },
+
+        {
+            "title":"Striped cotton formal shirt with cuffed sleeves",
+            "price":1850 ,
+            "size":["M","L","XXL"],
+            "category":"Shirt",
+            "brand":"Snitch",
+            "img":"/shirt-02.jpg"
+        },
+
+        {
+            "title":"Soft linen blend tapered ankle pants",
+            "price": 1950,
+            "size":["L","XL","XXL"],
+            "category":"Pant",
+            "brand":"Dennis lingo",
+             "img":"/pants-03.jpg"
+        },
+
+        {
+            "title":"V-neck ribbed stretch t-shirt in solid colors",
+            "price": 4600,
+            "size":["M","L","XXL"],
+            "category":"T-shirt",
+            "brand":"Snitch",
+            "img":"/tshirt-03.jpg"
+        },
+
+        {
+            "title":"Slim fit chambray shirt with chest pockets",
+            "price":2200 ,
+            "size":["L","XXL"],
+            "category":"Shirt",
+            "brand":"Dennis lingo",
+            "img":"/shirt-03.jpg"
+        },
+
+        {
+            "title":"Relaxed fit cargo jogger pants with pockets",
+            "price":7850 ,
+            "size":["L"],
+            "category":"Pant",
+            "brand":"Snitch",
+             "img":"/pants-04.jpg"
+        },
+
+        {
+            "title":"Oversized vintage wash slogan t-shirt",
+            "price": 6230,
+            "size":["M","L","XL"],
+            "category":"T-shirt",
+            "brand":"Snitch",
+            "img":"/tshirt-04.jpg"
+        },
+
+        {
+            "title":"Flowy longline shirt with floral print",
+            "price":850 ,
+            "size":["XL","XXL"],
+            "category":"Shirt",
+            "brand":"Dennis lingo",
+            "img":"/shirt-04.jpg"
+        }
+
+    ]
+}
